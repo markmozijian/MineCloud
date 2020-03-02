@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/toolbar"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tunnelpressure"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_rockpressure"
+
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignTop="@+id/tv_tunnelpressure"
+        android:layout_toRightOf="@+id/tv_tunnelpressure"
+        android:layout_toEndOf="@+id/tv_tunnelpressure">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_gas"
+
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignTop="@+id/tv_rockpressure"
+        android:layout_toRightOf="@+id/tv_rockpressure"
+        android:layout_toEndOf="@+id/tv_rockpressure">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_anchor"
+
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignTop="@+id/tv_gas"
+        android:layout_toRightOf="@+id/tv_gas"
+        android:layout_toEndOf="@+id/tv_gas">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_time"
+
+        android:layout_width="500dp"
+        android:layout_height="20dp"
+        android:minLines="1"
+        android:maxLines="2"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_tunnelpressure"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_location"
+
+        android:layout_width="500dp"
+        android:layout_height="20dp"
+        android:minLines="1"
+        android:maxLines="2"
+        android:textSize="14sp"
+        android:layout_alignTop="@+id/tv_time"
+        android:layout_alignLeft="@+id/tv_gas"
+        android:layout_alignStart="@+id/tv_gas">
+    </TextView>
+
+</RelativeLayout>
